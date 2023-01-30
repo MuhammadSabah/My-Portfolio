@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import { useFormik } from "formik";
 import {
   Box,
@@ -20,7 +20,7 @@ import { useAlertContext } from "../context/alertContext";
 
 const LandingSection = () => {
   const { isLoading, response, submit } = useSubmit();
-  const { onOpen, onClose, ...state } = useAlertContext();
+  const { onOpen, onClose } = useAlertContext();
 
   const {
     values,
@@ -52,7 +52,7 @@ const LandingSection = () => {
 
   useEffect(() => {
     console.log(response);
-    if (response) {
+    if (response.type && response.message !== "") {
       onOpen(response.type, response.message);
       if (response.type === "success") {
         resetForm();
@@ -63,7 +63,7 @@ const LandingSection = () => {
   return (
     <FullScreenSection
       isDarkBackground
-      backgroundColor="#512DA8"
+      backgroundColor="#512da8"
       py={16}
       spacing={8}
     >
@@ -75,6 +75,7 @@ const LandingSection = () => {
           <form
             onSubmit={(e) => {
               e.preventDefault();
+
               handleSubmit();
             }}
           >

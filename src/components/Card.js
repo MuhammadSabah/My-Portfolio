@@ -28,8 +28,20 @@ const Card = ({ title, description, imageSrc }) => {
       overflow="hidden"
       backgroundColor="white"
     >
-      <Image src={imageSrc} alt="Project Image" />
-      <Box p={4} display="flex" alignItems="baseline" flexDirection="column">
+      <Image
+        src={imageSrc}
+        alt="Project Image"
+        height="50%"
+        w="100%"
+        fit="cover"
+      />
+      <Box
+        p={4}
+        display="flex"
+        alignItems="baseline"
+        flexDirection="column"
+        height="50%"
+      >
         <Box
           color="black"
           mt="1"
@@ -43,7 +55,7 @@ const Card = ({ title, description, imageSrc }) => {
         <Box paddingY="3" color="blackAlpha.800" fontSize="14">
           {description}
         </Box>
-        <HStack justifyContent="end " w="100%">
+        <HStack justifyContent="end " w="100%" mt="auto">
           <Link isExternal style={{ textDecoration: "none" }}>
             <Tag
               size="lg"
