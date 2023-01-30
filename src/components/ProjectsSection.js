@@ -1,6 +1,15 @@
 import React from "react";
 import FullScreenSection from "./FullScreenSection";
-import { Box, Heading } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
+  HStack,
+} from "@chakra-ui/react";
 import Card from "./Card";
 
 const projects = [
@@ -42,20 +51,78 @@ const ProjectsSection = () => {
       <Heading as="h1" id="projects-section">
         Featured Projects
       </Heading>
-      <Box
-        display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
-        gridGap={8}
-      >
-        {projects.map((project) => (
-          <Card
-            key={project.title}
-            title={project.title}
-            description={project.description}
-            imageSrc={project.getImageSrc()}
-          />
-        ))}
-      </Box>
+      <Tabs isFitted variant="enclosed">
+        <TabList mx="16px">
+          <Tab
+            fontWeight="semibold"
+            _selected={{ color: "white", bg: "yellow.400" }}
+          >
+            Front-End
+          </Tab>
+          <Tab
+            fontWeight="semibold"
+            _selected={{ color: "white", bg: "blue.400" }}
+          >
+            Flutter
+          </Tab>
+          <Tab
+            fontWeight="semibold"
+            _selected={{ color: "white", bg: "green.400" }}
+          >
+            Python
+          </Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <Box
+              display="grid"
+              gridTemplateColumns="repeat(2,minmax(0,1fr))"
+              gridGap={8}
+            >
+              {projects.map((project) => (
+                <Card
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  imageSrc={project.getImageSrc()}
+                />
+              ))}
+            </Box>
+          </TabPanel>
+          <TabPanel>
+            <Box
+              display="grid"
+              gridTemplateColumns="repeat(2,minmax(0,1fr))"
+              gridGap={8}
+            >
+              {projects.map((project) => (
+                <Card
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  imageSrc={project.getImageSrc()}
+                />
+              ))}
+            </Box>
+          </TabPanel>
+          <TabPanel>
+            <Box
+              display="grid"
+              gridTemplateColumns="repeat(2,minmax(0,1fr))"
+              gridGap={8}
+            >
+              {projects.map((project) => (
+                <Card
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  imageSrc={project.getImageSrc()}
+                />
+              ))}
+            </Box>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
     </FullScreenSection>
   );
 };

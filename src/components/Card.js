@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Heading,
   HStack,
@@ -6,11 +7,18 @@ import {
   VStack,
   Link,
   Box,
-  // Image,
+  Tag,
+  Avatar,
+  TagLabel,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
 } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
+import { faArrowRight, faEye } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Card = ({ title, description, imageSrc }) => {
   return (
@@ -35,11 +43,34 @@ const Card = ({ title, description, imageSrc }) => {
         <Box paddingY="3" color="blackAlpha.800" fontSize="14">
           {description}
         </Box>
-        <Link isExternal>
-          <Text color="black" fontWeight="semibold" fontSize="14">
-            See more <FontAwesomeIcon icon={faArrowRight} size="1x" />
-          </Text>
-        </Link>
+        <HStack justifyContent="end " w="100%">
+          <Link isExternal style={{ textDecoration: "none" }}>
+            <Tag
+              size="lg"
+              colorScheme="gray"
+              boxShadow="md"
+              borderRadius="full"
+            >
+              <HStack>
+                <FontAwesomeIcon icon={faGithub} size="lg" pr="12px" />
+                <TagLabel>GitHub</TagLabel>
+              </HStack>
+            </Tag>
+          </Link>
+          <Link isExternal style={{ textDecoration: "none" }}>
+            <Tag
+              size="lg"
+              colorScheme="blue"
+              boxShadow="md"
+              borderRadius="full"
+            >
+              <HStack>
+                <FontAwesomeIcon icon={faEye} size="lg" pr="12px" />
+                <TagLabel>Live Preview</TagLabel>
+              </HStack>
+            </Tag>
+          </Link>
+        </HStack>
       </Box>
     </Box>
   );
