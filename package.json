@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.3.2",
+    "@coreui/coreui": "^4.2.6",
+    "@coreui/react": "^4.5.2",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
@@ -41,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@iconify/react": "^4.1.0",
     "prettier": "^2.7.1"
   }
 }
