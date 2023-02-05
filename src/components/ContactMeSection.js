@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import { useFormik } from "formik";
 import {
   Box,
@@ -51,7 +51,6 @@ const LandingSection = () => {
   });
 
   useEffect(() => {
-    console.log(response);
     if (response.type && response.message !== "") {
       onOpen(response.type, response.message);
       if (response.type === "success") {
@@ -75,7 +74,6 @@ const LandingSection = () => {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-
               handleSubmit();
             }}
           >

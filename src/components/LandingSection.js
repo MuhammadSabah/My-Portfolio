@@ -19,7 +19,7 @@ const LandingSection = () => (
       size="2xl"
       name="Muhammad Sabah Ibrahim"
       alt="Muhammad"
-      bg="red.400"
+      bg="#fca311"
     />
 
     <Text paddingTop={2} fontWeight="medium" fontSize="20">
