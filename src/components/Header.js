@@ -87,18 +87,18 @@ const Header = () => {
         <HStack
           px={16}
           py={4}
-          justifyContent="space-between"
+          justifyContent={{ base: "center", md: "space-between" }}
           alignItems="center"
         >
           <nav>
-            <HStack spacing={8}>
+            <HStack spacing={{ base: 8, md: 8 }}>
               {socials.map((social) => {
                 return (
                   <a key={social.url} href={social.url} target="_blank">
                     {social.icon === "Leetcode" ? (
                       <Icon icon="cib:leetcode" fontSize="30" />
                     ) : (
-                      <FontAwesomeIcon icon={social.icon} size="2x" />
+                      <FontAwesomeIcon icon={social.icon} size="2xl" />
                     )}
                   </a>
                 );
@@ -106,7 +106,7 @@ const Header = () => {
             </HStack>
           </nav>
           <nav>
-            <HStack spacing={8}>
+            <HStack display={{ base: "none", md: "inline-block" }} spacing={8}>
               <a onClick={handleClick("skills")} role="button">
                 My Skills
               </a>

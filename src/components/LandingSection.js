@@ -16,20 +16,35 @@ const LandingSection = () => (
     // backgroundColor="#2A4365"
   >
     <Avatar
-      size="2xl"
+      size={{ base: "xl", md: "2xl" }}
       name="Muhammad Sabah Ibrahim"
       alt="Muhammad"
       bg="#fca311"
     />
 
-    <Text paddingTop={2} fontWeight="medium" fontSize="20">
+    <Text
+      paddingTop={{ base: 12, md: 2 }}
+      fontFamily="Roboto Mono"
+      fontWeight="medium"
+      fontSize="20"
+    >
       {greeting}
     </Text>
-    <Box paddingTop="4">
-      <Text fontWeight="bold" align="center" fontSize="40">
+    <Box paddingTop={{ base: "6", md: "4" }} px={{ base: "12px", md: "0px" }}>
+      <Text
+        fontWeight="bold"
+        align="center"
+        fontSize={{ base: "26", md: "40" }}
+      >
         {bio1}
       </Text>
-      <Text fontWeight="bold" align="center" fontSize="40" width={800}>
+      <Text
+        fontWeight="bold"
+        align="center"
+        fontSize={{ base: "26", md: "40" }}
+        maxWidth={800}
+        px={{ base: "40px", md: "0px" }}
+      >
         {bio2}
       </Text>
     </Box>

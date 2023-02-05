@@ -13,6 +13,7 @@ const Footer = () => {
           alignItems="center"
           maxWidth="1024px"
           height={16}
+          fontFamily="Roboto Mono"
         >
           <p>Muhammad • © 2023</p>
         </Flex>

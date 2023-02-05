@@ -8,20 +8,23 @@ const SkillsSection = () => {
     <FullScreenSection
       backgroundColor="#14213d"
       isDarkBackground
-      p={8}
+      // p={{ md: 16, lg: 8 }}
       alignItems="flex-start"
-      py={28}
+      py={{ lg: 28 }}
+      mt={{ base: 24, lg: 0 }}
+      px={{ base: "36px", md: 10, lg: 0 }}
       spacing={8}
+      pb={{ base: "28", md: "0", lg: 32 }}
     >
       <Box>
         <Heading textAlign="left" as="h1" id="skills-section">
           Skills & Tools
         </Heading>
-        <Box w="100%" mt="16px">
-          <Text fontSize="26px" fontWeight="semibold">
+        <Box w="100%" mt="32px">
+          <Text fontSize="26px" fontFamily="Roboto Mono" fontWeight="semibold">
             Front-End
           </Text>
-          <Box mt="12px" display="flex" flexWrap="wrap" gap="20px">
+          <Box mt="16px" display="flex" flexWrap="wrap" gap="20px">
             {skills.frontEnd.map((item, index) => (
               <Tooltip key={item.tool} hasArrow label={item.tool}>
                 <Image
@@ -36,10 +39,10 @@ const SkillsSection = () => {
         </Box>
       </Box>
       <Box w="100%" mt="16px">
-        <Text fontSize="26px" fontWeight="semibold">
+        <Text fontSize="26px" fontFamily="Roboto Mono" fontWeight="semibold">
           Back-End
         </Text>
-        <Box mt="12px" display="flex" flexWrap="wrap" gap="20px">
+        <Box mt="16px" display="flex" flexWrap="wrap" gap="20px">
           {skills.backEnd.map((item, index) => (
             <Tooltip key={item.tool} hasArrow label={item.tool}>
               <Image
@@ -53,10 +56,10 @@ const SkillsSection = () => {
         </Box>
       </Box>
       <Box w="100%" mt="16px">
-        <Text fontSize="26px" fontWeight="semibold">
+        <Text fontSize="26px" fontFamily="Roboto Mono" fontWeight="semibold">
           Mobile
         </Text>
-        <Box mt="12px" display="flex" flexWrap="wrap" gap="20px">
+        <Box mt="16px" display="flex" flexWrap="wrap" gap="20px">
           {skills.mobile.map((item, index) => (
             <Tooltip key={item.tool} hasArrow label={item.tool}>
               <Image
@@ -70,10 +73,10 @@ const SkillsSection = () => {
         </Box>
       </Box>
       <Box w="100%" mt="16px">
-        <Text fontSize="26px" fontWeight="semibold">
+        <Text fontSize="26px" fontFamily="Roboto Mono" fontWeight="semibold">
           Others
         </Text>
-        <Box mt="12px" display="flex" flexWrap="wrap" gap="20px">
+        <Box mt="16px" display="flex" flexWrap="wrap" gap="20px">
           {skills.other.map((item, index) => (
             <Tooltip key={item.tool} hasArrow label={item.tool}>
               <Image
@@ -86,73 +89,6 @@ const SkillsSection = () => {
           ))}
         </Box>
       </Box>
-      {/* <Box pt="100px">
-        <Heading textAlign="left" as="h1" id="education-section">
-          Informal Education
-        </Heading>
-        <Box w="100%" mt="16px">
-          <Box
-            display="flex"
-            justifyContent="space-between"
-            alignItems="baseline"
-            fontSize="28px"
-            fontWeight="semibold"
-            gap="60px"
-          >
-            <Text>
-              ● WeCode Mobile Application Bootcamp | Rwanga Foundation
-            </Text>
-            <Link
-              href="https://drive.google.com/file/d/1l7bPIvpOt0A-G_6ddH-BGvgItV2HQA0q/view"
-              isExternal
-              fontSize="18px"
-              color="#fca311"
-            >
-              Certificate
-            </Link>
-          </Box>
-          <Box
-            display="flex"
-            justifyContent="space-between"
-            alignItems="baseline"
-            fontSize="26px"
-            fontWeight="semibold"
-            gap="60px"
-          >
-            <Text fontSize="28px" fontWeight="semibold">
-              ● Advanced React Course by Meta
-            </Text>
-            <Link
-              href="https://www.coursera.org/account/accomplishments/certificate/R9X77ESJ8BZQ"
-              isExternal
-              fontSize="18px"
-              color="#fca311"
-            >
-              Certificate
-            </Link>
-          </Box>
-          <Box
-            display="flex"
-            justifyContent="space-between"
-            alignItems="baseline"
-            fontSize="26px"
-            fontWeight="semibold"
-            gap="60px"
-          >
-            <Text fontSize="26px" fontWeight="semibold">
-              ● Crash Course on Python by Google
-            </Text>
-            <Link
-              isExternal
-              href="https://www.coursera.org/account/accomplishments/certificate/SX2R8FZ9MKDD"
-              fontSize="18px"
-              color="#fca311"
-            >
-              Certificate
-            </Link>
-          </Box>
-        </Box>
-      </Box> */}
     </FullScreenSection>
   );
 };

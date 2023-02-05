@@ -19,8 +19,11 @@ const ProjectsSection = () => {
       backgroundColor="#415a77"
       isDarkBackground
       p={8}
+      py={{ md: 20, lg: 0 }}
       alignItems="flex-start"
       spacing={8}
+      px={{ base: 8, md: 12, lg: 0 }}
+      pt={{ lg: 12 }}
     >
       <Heading as="h1" id="projects-section">
         Featured Projects
@@ -52,11 +55,14 @@ const ProjectsSection = () => {
             Java
           </Tab>
         </TabList>
-        <TabPanels overflowY="auto" height="880px">
+        <TabPanels overflowY="auto" height="760px">
           <TabPanel>
             <Box
               display="grid"
-              gridTemplateColumns="repeat(2,minmax(0,1fr))"
+              gridTemplateColumns={{
+                base: "repeat(1,minmax(0,1fr))",
+                md: "repeat(2,minmax(0,1fr))",
+              }}
               gridGap={8}
               alignItems="start"
             >
@@ -76,7 +82,10 @@ const ProjectsSection = () => {
           <TabPanel>
             <Box
               display="grid"
-              gridTemplateColumns="repeat(2,minmax(0,1fr))"
+              gridTemplateColumns={{
+                base: "repeat(1,minmax(0,1fr))",
+                md: "repeat(2,minmax(0,1fr))",
+              }}
               gridGap={8}
               alignItems="start"
             >
@@ -96,7 +105,10 @@ const ProjectsSection = () => {
           <TabPanel>
             <Box
               display="grid"
-              gridTemplateColumns="repeat(2,minmax(0,1fr))"
+              gridTemplateColumns={{
+                base: "repeat(1,minmax(0,1fr))",
+                md: "repeat(2,minmax(0,1fr))",
+              }}
               gridGap={8}
               alignItems="start"
             >
@@ -116,7 +128,10 @@ const ProjectsSection = () => {
           <TabPanel>
             <Box
               display="grid"
-              gridTemplateColumns="repeat(2,minmax(0,1fr))"
+              gridTemplateColumns={{
+                base: "repeat(1,minmax(0,1fr))",
+                md: "repeat(2,minmax(0,1fr))",
+              }}
               gridGap={8}
               alignItems="start"
             >

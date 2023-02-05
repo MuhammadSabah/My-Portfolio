@@ -36,7 +36,7 @@ const Card = ({
       maxHeight="fit"
       backgroundColor="white"
     >
-      {imageSrc && (
+      {/* {imageSrc && (
         <Image
           src={imageSrc}
           alt="Project Image"
@@ -44,7 +44,7 @@ const Card = ({
           w="100%"
           fit="cover"
         />
-      )}
+      )} */}
       <Box
         p={4}
         display="flex"
@@ -74,6 +74,7 @@ const Card = ({
                   fontWeight="semibold"
                   key={item}
                   color="gray.500"
+                  fontSize="14px"
                 >
                   {index !== techStack.length - 1 ? item + "," : item}
                 </Text>
@@ -95,8 +96,8 @@ const Card = ({
                 borderRadius="full"
               >
                 <HStack>
-                  <FontAwesomeIcon icon={faGithub} size="lg" pr="12px" />
-                  <TagLabel>GitHub</TagLabel>
+                  <FontAwesomeIcon icon={faGithub} size="xl" pr="12px" />
+                  <TagLabel fontSize="14px">GitHub</TagLabel>
                 </HStack>
               </Tag>
             </Link>
@@ -115,8 +116,8 @@ const Card = ({
                 borderRadius="full"
               >
                 <HStack>
-                  <FontAwesomeIcon icon={faEye} size="lg" pr="12px" />
-                  <TagLabel>Live Preview</TagLabel>
+                  <FontAwesomeIcon icon={faEye} size="xl" pr="12px" />
+                  <TagLabel fontSize="14px">Live Preview</TagLabel>
                 </HStack>
               </Tag>
             </Link>
