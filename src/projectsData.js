@@ -49,7 +49,7 @@ const projects = {
       description: "A collection of beautifully designed landing pages",
       getImageSrc: "./images/projects/frontEnd/landing-pages.png",
       github: "https://github.com/MuhammadSabah/Landing-Pages",
-      livePreview: "https://github.com/MuhammadSabah/Landing-Pages",
+      livePreview: "",
       techStack: ["HTML", "Pure CSS"],
     },
   ],
