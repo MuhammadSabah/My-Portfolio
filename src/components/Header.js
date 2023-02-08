@@ -22,10 +22,10 @@ const socials = [
     icon: faLinkedin,
     url: "https://www.linkedin.com/in/muhammad-sabah-4791b7226/",
   },
-  {
-    icon: "Leetcode",
-    url: "https://leetcode.com/MuhammadSabah/",
-  },
+  // {
+  //   icon: "Leetcode",
+  //   url: "https://leetcode.com/MuhammadSabah/",
+  // },
   {
     icon: faStackOverflow,
     url: "https://stackoverflow.com/users/14839602/hama-sabah",
