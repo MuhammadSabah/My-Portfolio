@@ -28,7 +28,7 @@ const ProjectsSection = () => {
       <Heading as="h1" id="projects-section">
         Featured Projects
       </Heading>
-      <Tabs isManual isLazy variant="enclosed">
+      <Tabs isManual variant="enclosed">
         <TabList mx="16px">
           <Tab
             fontWeight="semibold"
