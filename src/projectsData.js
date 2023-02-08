@@ -128,7 +128,7 @@ const projects = {
       title: "Path Visualizer",
       description:
         "A path finding visualizer project that uses the Dijkstra algorithm to demonstrate how it finds the shortest path between two points in a graph.",
-      getImageSrc: undefined,
+      getImageSrc: "./images/projects/python/dijkstra.png",
       github: "https://github.com/MuhammadSabah/Path-Visualizer",
       livePreview: "",
       techStack: ["Python", "pygame"],
