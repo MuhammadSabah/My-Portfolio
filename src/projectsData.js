@@ -5,8 +5,8 @@ const projects = {
       description:
         "Discover fashion that fits your style with ease. Our e-commerce site offers a wide range of clothing options for every occasion. Shop now and elevate your wardrobe with just a few taps. ",
       getImageSrc: "./images/projects/frontEnd/avira.png",
-      github: "",
-      livePreview: "",
+      github: "https://github.com/MuhammadSabah/Avira",
+      livePreview: "https://avira-opal.vercel.app/",
       techStack: ["React", "Material UI", "Redux"],
     },
     {
@@ -14,7 +14,7 @@ const projects = {
       description:
         "Discover fresh, flavorful dining at Little Lemon. Book a table through our website and enjoy our creative menu in a relaxed atmosphere. Experience culinary excellence made with passion.",
       getImageSrc: "./images/projects/frontEnd/little-lemon.png",
-      github: "",
+      github: "https://github.com/MuhammadSabah/Little-Lemon-Restaurant",
       livePreview: "https://little-lemon-restaurant-three.vercel.app/",
       techStack: ["React", "Tailwind CSS"],
     },
@@ -23,9 +23,9 @@ const projects = {
       description:
         "Manage your contacts with ease using our app. Quickly add, delete, and edit contacts, always keeping your information up to date and organized.",
       getImageSrc: "./images/projects/frontEnd/contact-manager.png",
-      github: "",
+      github: "https://github.com/MuhammadSabah/Contact-Manager",
       livePreview: "https://web-js-assignment.vercel.app/",
-      techStack: ["HTML", "Vanilla JS", "Bootstrap"],
+      techStack: ["HTML", "CSS", "Vanilla JS", "Bootstrap"],
     },
     {
       title: "Markdown Editor",
@@ -34,13 +34,13 @@ const projects = {
       getImageSrc: undefined,
       github: "",
       livePreview: "",
-      techStack: ["React"],
+      techStack: ["React", "Ant Design"],
     },
     {
       title: "Portfolio",
       description: "My Portfolio Website",
       getImageSrc: "./images/projects/frontEnd/my-portfolio.png",
-      github: "",
+      github: "https://github.com/MuhammadSabah/My-Portfolio",
       livePreview: "https://muhammad-sabah-portfolio.netlify.app/",
       techStack: ["React", "Chakra UI"],
     },
@@ -49,7 +49,7 @@ const projects = {
       description: "A collection of beautifully designed landing pages",
       getImageSrc: "./images/projects/frontEnd/landing-pages.png",
       github: "https://github.com/MuhammadSabah/Landing-Pages",
-      livePreview: "",
+      livePreview: "https://github.com/MuhammadSabah/Landing-Pages",
       techStack: ["HTML", "Pure CSS"],
     },
   ],
@@ -123,7 +123,17 @@ const projects = {
       techStack: ["Flutter", "Dart", "GetX"],
     },
   ],
-  python: [],
+  python: [
+    {
+      title: "Path Visualizer",
+      description:
+        "A path finding visualizer project that uses the Dijkstra algorithm to demonstrate how it finds the shortest path between two points in a graph.",
+      getImageSrc: undefined,
+      github: "https://github.com/MuhammadSabah/Path-Visualizer",
+      livePreview: "",
+      techStack: ["Python", "pygame"],
+    },
+  ],
   java: [
     {
       title: "Shipping Management System",
