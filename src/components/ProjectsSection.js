@@ -19,11 +19,11 @@ const ProjectsSection = () => {
       backgroundColor="#415a77"
       isDarkBackground
       p={8}
-      py={{ md: 20, lg: 0 }}
+      py={{ md: 20, lg: "120px" }}
       alignItems="flex-start"
       spacing={8}
       px={{ base: 8, md: 12, lg: 0 }}
-      pt={{ lg: 12 }}
+      pt={{ lg: "80px" }}
     >
       <Heading as="h1" id="projects-section">
         Featured Projects
