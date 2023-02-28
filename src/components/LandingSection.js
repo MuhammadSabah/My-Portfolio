@@ -19,7 +19,7 @@ const LandingSection = () => (
       size={{ base: "xl", md: "2xl" }}
       name="Muhammad Sabah Ibrahim"
       alt="Muhammad"
-      bg="#fca311"
+      bg="#512da8"
     />
 
     <Text
