@@ -53,12 +53,20 @@ const skills = {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
     },
     {
+      tool: "PHP",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg",
+    },
+    {
       tool: "MongoDB",
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     },
     {
-      tool: "MySql",
+      tool: "MySQL",
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    },
+    {
+      tool: "PostgreSQL",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg",
     },
     {
       tool: "Firebase",
@@ -83,6 +91,10 @@ const skills = {
     {
       tool: "C++",
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+    },
+    {
+      tool: "C#",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
     },
     {
       tool: "Python",
