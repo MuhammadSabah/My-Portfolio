@@ -133,6 +133,15 @@ const projects = {
       livePreview: "",
       techStack: ["Python", "pygame"],
     },
+    {
+      title: "Game of Life",
+      description:
+        "The Game of Life is a cellular automaton simulation developed by mathematician John Conway. It consists of a grid of cells, where each cell is either alive or dead. The simulation evolves over time based on simple rules that dictate whether each cell should live, die, or be born based on the state of its neighboring cells.",
+      getImageSrc: "./images/projects/python/gameoflife.png",
+      github: "https://github.com/MuhammadSabah/Game-of-Life",
+      livePreview: "",
+      techStack: ["Python", "pygame", "numpy"],
+    },
   ],
   java: [
     {
