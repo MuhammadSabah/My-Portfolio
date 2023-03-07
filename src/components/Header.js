@@ -27,7 +27,7 @@ const socials = [
     url: "https://github.com/MuhammadSabah",
   },
   {
-    title: "Linkedin",
+    title: "LinkedIn",
     icon: faLinkedin,
     url: "https://www.linkedin.com/in/muhammad-sabah-4791b7226/",
   },

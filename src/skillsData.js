@@ -92,16 +92,16 @@ const skills = {
       tool: "C++",
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
     },
-    {
-      tool: "C#",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
-    },
+    // {
+    //   tool: "C#",
+    //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+    // },
     {
       tool: "Python",
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     },
     {
-      tool: "Matlab",
+      tool: "MATLAB",
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg",
     },
   ],
