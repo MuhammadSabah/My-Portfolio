@@ -5,20 +5,29 @@ import {
   faGithub,
   faLinkedin,
   faStackOverflow,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { Box, HStack, useStatStyles } from "@chakra-ui/react";
+import { Box, HStack, useStatStyles, Tooltip } from "@chakra-ui/react";
 import { Icon } from "@iconify/react";
 
 const socials = [
   {
+    title: "Mail",
     icon: faEnvelope,
     url: "mailto: hama.s.ibrahim9@gmail.com",
   },
   {
+    title: "WhatsApp: +964 751 163 0373",
+    icon: faWhatsapp,
+    url: "https://api.whatsapp.com/send?phone=9647511630373",
+  },
+  {
+    title: "GitHub",
     icon: faGithub,
     url: "https://github.com/MuhammadSabah",
   },
   {
+    title: "Linkedin",
     icon: faLinkedin,
     url: "https://www.linkedin.com/in/muhammad-sabah-4791b7226/",
   },
@@ -27,6 +36,7 @@ const socials = [
   //   url: "https://leetcode.com/MuhammadSabah/",
   // },
   {
+    title: "StackOverflow",
     icon: faStackOverflow,
     url: "https://stackoverflow.com/users/14839602/hama-sabah",
   },
@@ -94,13 +104,15 @@ const Header = () => {
             <HStack spacing={{ base: 8, md: 8 }}>
               {socials.map((social) => {
                 return (
-                  <a key={social.url} href={social.url} target="_blank">
-                    {social.icon === "Leetcode" ? (
-                      <Icon icon="cib:leetcode" fontSize="30" />
-                    ) : (
-                      <FontAwesomeIcon icon={social.icon} size="2xl" />
-                    )}
-                  </a>
+                  <Tooltip key={social.title} hasArrow label={social.title}>
+                    <a key={social.url} href={social.url} target="_blank">
+                      {social.icon === "Leetcode" ? (
+                        <Icon icon="cib:leetcode" fontSize="30" />
+                      ) : (
+                        <FontAwesomeIcon icon={social.icon} size="2xl" />
+                      )}
+                    </a>
+                  </Tooltip>
                 );
               })}
             </HStack>
